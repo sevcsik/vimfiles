@@ -40,4 +40,6 @@ Bundle "pangloss/vim-javascript"
 Bundle "othree/html5-syntax.vim"
 Bundle "scrooloose/nerdtree"
 Bundle "tpope/vim-surround"
+Bundle "stephpy/vim-phpdoc"
+Bundle "shawncplus/php.vim"
 filetype plugin indent on
