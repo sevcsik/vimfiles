@@ -1,4 +1,4 @@
 vimfiles
 ========
 
-My vim configuration
+My vim configuration and vundles, focusing on PHP and frontend development.
