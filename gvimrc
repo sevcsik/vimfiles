@@ -2,7 +2,7 @@ colorscheme murphy
 if has("win32")
   set guifont=Consolas 
 else
-  set guifont=Inconsolata
+  set guifont=Consolas\ 12
 endif
 set backspace=indent,eol,start
 set guioptions-=m
