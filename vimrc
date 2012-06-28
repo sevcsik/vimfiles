@@ -34,7 +34,11 @@ iab csnul /* CSS reset */
 "Vundles
 set nocompatible              
 filetype off                   
-set rtp+=~/.vim/vundle/
+if has("win32")
+  set rtp+=~/vimfiles/vundle/
+else
+  set rtp+=~/.vim/vundle/
+endif
 call vundle#rc()
 Bundle "pangloss/vim-javascript"
 Bundle "othree/html5-syntax.vim"
