@@ -10,3 +10,5 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=l
 set guioptions-=b
+
+highlight ColorColumn guibg=#000000 guifg=#880000
