@@ -5,7 +5,8 @@ else
   set guifont=Inconsolata
 endif
 set backspace=indent,eol,start
-set guioptions-=m
+set guioptions-=M
 set guioptions-=T
-set guioptions-=r
-
+set guioptions-=R
+set guioptions-=L
+set guioptions-=B
