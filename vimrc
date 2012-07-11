@@ -44,6 +44,16 @@ Bundle "pangloss/vim-javascript"
 Bundle "othree/html5-syntax.vim"
 Bundle "scrooloose/nerdtree"
 Bundle "tpope/vim-surround"
-Bundle "stephpy/vim-phpdoc"
-Bundle "shawncplus/php.vim"
+
+"Home-only settings
+if hostname() == "sevcsik-desktop" || hostname() == "sevcsik-netbook"
+  Bundle "stephpy/vim-phpdoc"
+  Bundle "shawncplus/php.vim"
+endif
+
+"Workplace-only settings
+if hostname() == "D01002846"
+"  Bundle "hallettj/jslint.vim"
+endif
+
 filetype plugin indent on
