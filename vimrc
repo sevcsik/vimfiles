@@ -53,7 +53,7 @@ endif
 
 "Workplace-only settings
 if hostname() == "D01002846"
-"  Bundle "hallettj/jslint.vim"
+  Bundle "scrooloose/syntastic"
 endif
 
 filetype plugin indent on
