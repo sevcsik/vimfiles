@@ -44,6 +44,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "othree/html5-syntax.vim"
 Bundle "scrooloose/nerdtree"
 Bundle "tpope/vim-surround"
+Bundle "scrooloose/syntastic"
 
 "Home-only settings
 if hostname() == "sevcsik-desktop" || hostname() == "sevcsik-netbook"
@@ -53,7 +54,6 @@ endif
 
 "Workplace-only settings
 if hostname() == "D01002846"
-  Bundle "scrooloose/syntastic"
 endif
 
 filetype plugin indent on
