@@ -45,6 +45,7 @@ Bundle "othree/html5-syntax.vim"
 Bundle "scrooloose/nerdtree"
 Bundle "tpope/vim-surround"
 Bundle "scrooloose/syntastic"
+let g:syntastic_javascript_checker="jsl"
 
 "Home-only settings
 if hostname() == "sevcsik-desktop" || hostname() == "sevcsik-netbook"
