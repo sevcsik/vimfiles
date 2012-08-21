@@ -7,6 +7,7 @@ set number
 set background=dark
 set nohlsearch
 set colorcolumn=77
+set mouse=a
 highlight ColorColumn ctermfg=darkred ctermbg=8
 
 "Javascript abs
