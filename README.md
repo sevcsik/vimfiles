@@ -1,5 +1,7 @@
 vimfiles
 ========
 
-My vim configuration and vundles, focusing on PHP and frontend development.
+My vim configuration focusing on Javascript development.
 To use it, clone it into your vim home directory, and run :BundleInstall.
+
+On Unix-like, symlink vimrc and gvimrc to ~/.vimrc and ~/.gvimrc
