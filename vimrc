@@ -9,15 +9,18 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
 NeoBundle "goatslacker/mango.vim"
-NeoBundle "scrooloose/nerdtree"
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
 
 "Syntastic config
 let g:syntastic_javascript_checkers = ['jsl']
 
-"NERDTree config
-autocmd vimenter * NERDTree
+autocmd vimenter * call OpenNetrw()
+function OpenNetrw()
+    30vsplit
+    Explore 
+    wincmd w
+endfunction
 
 "JS-related bundles
 NeoBundleLazy "sidorares/node-vim-debugger", { "autoload": { "filetypes": "javascript" } }
