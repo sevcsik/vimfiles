@@ -15,13 +15,6 @@ NeoBundle "hail2u/vim-css3-syntax"
 "Syntastic config
 let g:syntastic_javascript_checkers = ['jsl']
 
-autocmd vimenter * call OpenNetrw()
-function OpenNetrw()
-    30vsplit
-    Explore 
-    wincmd w
-endfunction
-
 "JS-related bundles
 NeoBundleLazy "sidorares/node-vim-debugger", { "autoload": { "filetypes": "javascript" } }
 
