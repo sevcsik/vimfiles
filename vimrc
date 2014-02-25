@@ -13,7 +13,7 @@ NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
 
 "Syntastic config
-let g:syntastic_javascript_checkers = ['jsl']
+let g:syntastic_javascript_checkers = ['jshint']
 
 "JS-related bundles
 NeoBundleLazy "sidorares/node-vim-debugger", { "autoload": { "filetypes": "javascript" } }
@@ -23,8 +23,7 @@ ab jsvoid javascript:void(0)
 
 "Code style
 set shiftwidth=4
-set tabstop=8
-set softtabstop=4
+set tabstop=4
 set noexpandtab
 set encoding=utf-8
 
