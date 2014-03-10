@@ -9,6 +9,7 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
 NeoBundle "goatslacker/mango.vim"
+NeoBundle "Shougo/vimproc.vim"
 NeoBundle 'Shougo/vimshell'
 
 "Syntastic config
