@@ -1,0 +1,15 @@
+" vimrc for Perform projects - based on
+" http://helpdesk.premiumtv.co.uk/mediawiki/index.php/Javascript_Coding_Standards
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+ab header_jshint /*jshint camelcase:true, curly:true, eqeqeq:true, immed:true, indent:2, latedef:true, newcap:true, noarg:true, noempty:true, nonew:true, quotmark:single, undef:true, unused:true, strict:true, trailing:true */
+ab header_jsdoc 
+\<CR>/** 
+\<CR> * @module
+\<CR> * @author 
+\<CR> */
+
