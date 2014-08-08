@@ -42,6 +42,7 @@ let g:javascript_enable_domhtmlcss = 1
 set shiftwidth=4
 set tabstop=4
 set noexpandtab
+set softtabstop=4
 set encoding=utf-8
 
 "Look'n'feel
