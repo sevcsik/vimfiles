@@ -29,6 +29,7 @@ NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "maksimr/vim-jsbeautify"
 NeoBundle "einars/js-beautify"
+NeoBundle "pbrisbin/vim-syntax-shakespeare"
 
 "JS abbrevations
 ab jsvoid javascript:void(0)
