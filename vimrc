@@ -31,7 +31,9 @@ NeoBundle "maksimr/vim-jsbeautify"
 NeoBundle "einars/js-beautify"
 NeoBundle "pbrisbin/vim-syntax-shakespeare"
 NeoBundle "bronson/vim-trailing-whitespace"
+NeoBundle "burnettk/vim-angular"
 NeoBundle "dart-lang/dart-vim-plugin"
+NeoBundle "lukerandall/haskellmode-vim"
 
 "JS abbrevations
 ab jsvoid javascript:void(0)
