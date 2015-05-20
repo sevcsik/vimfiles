@@ -1,6 +1,6 @@
 "NeoBundle init
 set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 "Common bundles
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -8,34 +8,19 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
-NeoBundle "goatslacker/mango.vim"
-"NeoBundle 'Shougo/vimproc', {
-"      \ 'build' : {
-"      \     'windows' : 'make -f make_mingw32.mak',
- "     \     'cygwin' : 'make -f make_cygwin.mak',
- "     \     'mac' : 'make -f make_mac.mak',
- "     \     'unix' : 'make -f make_unix.mak',
- "     \    },
- "     \ }
+NeoBundle "vim-scripts/wombat"
 NeoBundle 'Shougo/vimshell'
 
 "Syntastic config
 let g:syntastic_javascript_checkers = ['jshint']
 
 "JS-related bundles
-NeoBundleLazy "sidorares/node-vim-debugger", { "autoload": { "filetypes": "javascript" } }
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "maksimr/vim-jsbeautify"
-NeoBundle "einars/js-beautify"
-NeoBundle "pbrisbin/vim-syntax-shakespeare"
-NeoBundle "bronson/vim-trailing-whitespace"
-NeoBundle "burnettk/vim-angular"
-NeoBundle "dart-lang/dart-vim-plugin"
 
-NeoBundle "lukerandall/haskellmode-vim"
-let g:haddock_browser="/usr/bin/google-chrome-stable"
+call neobundle#end()
 
 "JS abbrevations
 ab jsvoid javascript:void(0)
@@ -53,15 +38,15 @@ set softtabstop=4
 set encoding=utf-8
 
 "Look'n'feel
+color wombat
 let &t_Co=256
 set background=dark
 set nohlsearch
-set colorcolumn=77
+set colorcolumn=80
 set mouse=a
 set backspace=indent,eol,start
-hi! VertSplit ctermfg=233  ctermbg=233
-highlight ColorColumn ctermfg=darkred ctermbg=8
-"Background color fix for MacVim
 syntax enable
-color mango
 filetype plugin indent on
+hi! VertSplit ctermfg=233  ctermbg=233
+hi! ColorColumn ctermfg=darkred ctermbg=black
+
