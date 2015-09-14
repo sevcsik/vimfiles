@@ -12,13 +12,14 @@ NeoBundle "vim-scripts/wombat"
 NeoBundle 'Shougo/vimshell'
 
 "Syntastic config
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
 
 "JS-related bundles
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "maksimr/vim-jsbeautify"
+NeoBundle "mxw/vim-jsx"
 
 call neobundle#end()
 
