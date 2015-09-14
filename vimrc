@@ -38,6 +38,8 @@ set noexpandtab
 set softtabstop=4
 set encoding=utf-8
 
+command Todo grep TODO -A1 -r . 
+
 "Look'n'feel
 color wombat
 let &t_Co=256
