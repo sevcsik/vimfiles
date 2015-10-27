@@ -20,6 +20,7 @@ NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "maksimr/vim-jsbeautify"
 NeoBundle "mxw/vim-jsx"
+NeoBundle "vim-scripts/Smart-Tabs"
 
 call neobundle#end()
 
@@ -53,3 +54,4 @@ filetype plugin indent on
 hi! VertSplit ctermfg=233  ctermbg=233
 hi! ColorColumn ctermfg=darkred ctermbg=black
 
+set exrc
