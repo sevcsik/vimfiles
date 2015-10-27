@@ -38,6 +38,7 @@ set tabstop=4
 set noexpandtab
 set softtabstop=4
 set encoding=utf-8
+set smarttab
 
 command Todo grep TODO -A1 -r . 
 
@@ -45,7 +46,7 @@ command Todo grep TODO -A1 -r .
 color wombat
 let &t_Co=256
 set background=dark
-set nohlsearch
+set hlsearch
 set colorcolumn=80
 set mouse=a
 set backspace=indent,eol,start
@@ -53,5 +54,6 @@ syntax enable
 filetype plugin indent on
 hi! VertSplit ctermfg=233  ctermbg=233
 hi! ColorColumn ctermfg=darkred ctermbg=black
+hi! Search ctermfg=yellow ctermbg=235
 
 set exrc
