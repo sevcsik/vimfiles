@@ -11,6 +11,16 @@ NeoBundle "scrooloose/syntastic"
 NeoBundle "vim-scripts/wombat"
 NeoBundle 'Shougo/vimshell'
 
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+
 "Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
 
@@ -21,6 +31,11 @@ NeoBundle "pangloss/vim-javascript"
 NeoBundle "maksimr/vim-jsbeautify"
 NeoBundle "mxw/vim-jsx"
 NeoBundle "vim-scripts/Smart-Tabs"
+
+"Typescript
+NeoBundle "Quramy/tsuquyomi"
+NeoBundle "leafgarland/typescript-vim"
+NeoBundle "jason0x43/vim-js-indent"
 
 call neobundle#end()
 
@@ -66,5 +81,8 @@ filetype plugin indent on
 hi! VertSplit ctermfg=233  ctermbg=233
 hi! ColorColumn ctermfg=darkred ctermbg=black
 hi! Search ctermfg=yellow ctermbg=235
+
+set guioptions-=T
+set guioptions-=m
 
 set exrc
