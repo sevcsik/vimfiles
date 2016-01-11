@@ -10,6 +10,7 @@ NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
 NeoBundle "vim-scripts/wombat"
 NeoBundle 'Shougo/vimshell'
+NeoBundle "wakatime/vim-wakatime"
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
@@ -39,10 +40,10 @@ NeoBundle "jason0x43/vim-js-indent"
 
 call neobundle#end()
 
-"JS abbrevations
+"JS abbreviations
 ab jsvoid javascript:void(0)
 
-"CSS abbrevations
+"CSS abbreviations
 ab lt480 @media only screen and (max-width: 479px) {<CR>
 ab lt768 @media only screen and (max-width: 767px) {<CR>
 ab lt1024 @media only screen and (max-width: 1023px) {<CR>
