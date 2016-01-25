@@ -11,6 +11,7 @@ NeoBundle "scrooloose/syntastic"
 NeoBundle "vim-scripts/wombat"
 NeoBundle 'Shougo/vimshell'
 NeoBundle "wakatime/vim-wakatime"
+NeoBundle "vim-airline/vim-airline"
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
