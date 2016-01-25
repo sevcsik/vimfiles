@@ -1,3 +1,5 @@
+let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
+
 "NeoBundle init
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
@@ -11,7 +13,6 @@ NeoBundle "scrooloose/syntastic"
 NeoBundle "vim-scripts/wombat"
 NeoBundle 'Shougo/vimshell'
 NeoBundle "wakatime/vim-wakatime"
-NeoBundle "vim-airline/vim-airline"
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
