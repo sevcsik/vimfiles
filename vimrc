@@ -84,6 +84,7 @@ filetype plugin indent on
 hi! VertSplit ctermfg=233  ctermbg=233
 hi! ColorColumn ctermfg=darkred ctermbg=black
 hi! Search ctermfg=yellow ctermbg=235
+set number
 
 set guioptions-=T
 set guioptions-=m
