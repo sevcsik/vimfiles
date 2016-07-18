@@ -2,6 +2,7 @@ let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
 
 "NeoBundle init
 set runtimepath+=C:/Users/asevcsik/AppData/Local/nvim/bundle/neobundle.vim
+set runtimepath+=C:/Program\ Files/NeovimQt/share/nvim-qt/runtime
 
 call neobundle#begin(expand('C:/Users/asevcsik/AppData/Local/nvim/bundle/'))
 
