@@ -11,10 +11,9 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
-NeoBundle "vim-scripts/wombat"
-NeoBundle 'Shougo/vimshell'
 NeoBundle "wakatime/vim-wakatime"
 NeoBundle "tomlion/vim-solidity"
+NeoBundle "candy.vim"
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
@@ -74,6 +73,7 @@ set smarttab
 command Todo grep TODO -A1 -r . 
 
 "Look'n'feel
+colorscheme candy
 let &t_Co=256
 set background=dark
 set hlsearch
