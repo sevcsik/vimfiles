@@ -1,8 +1,8 @@
 let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
 
 "NeoBundle init
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
+set runtimepath+=~/.config/nvim/bundle/neobundle.vim
+call neobundle#begin(expand('~/.config/nvim/bundle/'))
 
 "Common bundles
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -10,10 +10,10 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
-NeoBundle "vim-scripts/wombat"
 NeoBundle 'Shougo/vimshell'
 NeoBundle "wakatime/vim-wakatime"
 NeoBundle "tomlion/vim-solidity"
+NeoBundle "candy.vim"
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
@@ -73,7 +73,7 @@ set smarttab
 command Todo grep TODO -A1 -r . 
 
 "Look'n'feel
-color wombat
+color candy
 let &t_Co=256
 set background=dark
 set hlsearch
