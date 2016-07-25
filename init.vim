@@ -15,6 +15,9 @@ NeoBundle "scrooloose/syntastic"
 NeoBundle "wakatime/vim-wakatime"
 NeoBundle "tomlion/vim-solidity"
 NeoBundle "candy.vim"
+NeoBundle "editorconfig/editorconfig-vim"
+NeoBundle "Shougo/deoplete.nvim"
+let g:deoplete#enable_at_startup = 1
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
@@ -28,19 +31,22 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 "Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:syntastic_typescript_tsc_fname = ''
 
-"JS-related bundles
+"CSS
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
+
+"JS
 NeoBundle "pangloss/vim-javascript"
-NeoBundle "maksimr/vim-jsbeautify"
 NeoBundle "mxw/vim-jsx"
+NeoBundle "jason0x43/vim-js-indent"
 NeoBundle "vim-scripts/Smart-Tabs"
 
 "Typescript
-NeoBundle "Quramy/tsuquyomi"
+NeoBundle "mhartington/deoplete-typescript"
 NeoBundle "leafgarland/typescript-vim"
-NeoBundle "jason0x43/vim-js-indent"
 
 call neobundle#end()
 
