@@ -3,8 +3,9 @@ let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
 "NeoBundle init
 set runtimepath+=C:/Users/asevcsik/AppData/Local/nvim/bundle/neobundle.vim
 set runtimepath+=C:/Program\ Files/NeovimQt/share/nvim-qt/runtime
+set runtimepath+=~/.config/nvim/bundle/neobundle.vim
 
-call neobundle#begin(expand('C:/Users/asevcsik/AppData/Local/nvim/bundle/'))
+call neobundle#begin(expand('~/.config/nvim/bundle/'))
 
 "Common bundles
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -46,6 +47,7 @@ NeoBundle "vim-scripts/Smart-Tabs"
 
 "Typescript
 NeoBundle "mhartington/deoplete-typescript"
+NeoBundle "Quramy/tsuquyomi"
 NeoBundle "leafgarland/typescript-vim"
 
 call neobundle#end()
@@ -88,6 +90,7 @@ set colorcolumn=80
 set mouse=a
 set backspace=indent,eol,start
 syntax enable
+set termguicolors
 filetype plugin indent on
 hi! VertSplit ctermfg=233  ctermbg=233
 hi! ColorColumn ctermfg=darkred ctermbg=black
