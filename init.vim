@@ -2,6 +2,7 @@ let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
 
 "NeoBundle init
 set runtimepath+=~/.config/nvim/bundle/neobundle.vim
+
 call neobundle#begin(expand('~/.config/nvim/bundle/'))
 
 "Common bundles
@@ -10,10 +11,12 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
-NeoBundle 'Shougo/vimshell'
 NeoBundle "wakatime/vim-wakatime"
 NeoBundle "tomlion/vim-solidity"
 NeoBundle "candy.vim"
+NeoBundle "editorconfig/editorconfig-vim"
+NeoBundle "Shougo/deoplete.nvim"
+let g:deoplete#enable_at_startup = 1
 
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
@@ -27,19 +30,23 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 "Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:syntastic_typescript_tsc_fname = ''
 
-"JS-related bundles
+"CSS
 NeoBundle "groenewege/vim-less"
 NeoBundle "hail2u/vim-css3-syntax"
+
+"JS
 NeoBundle "pangloss/vim-javascript"
-NeoBundle "maksimr/vim-jsbeautify"
 NeoBundle "mxw/vim-jsx"
+NeoBundle "jason0x43/vim-js-indent"
 NeoBundle "vim-scripts/Smart-Tabs"
 
 "Typescript
+NeoBundle "mhartington/deoplete-typescript"
 NeoBundle "Quramy/tsuquyomi"
 NeoBundle "leafgarland/typescript-vim"
-NeoBundle "jason0x43/vim-js-indent"
 
 call neobundle#end()
 
@@ -73,7 +80,7 @@ set smarttab
 command Todo grep TODO -A1 -r . 
 
 "Look'n'feel
-color candy
+colorscheme candy
 let &t_Co=256
 set background=dark
 set hlsearch
@@ -81,6 +88,7 @@ set colorcolumn=80
 set mouse=a
 set backspace=indent,eol,start
 syntax enable
+set termguicolors
 filetype plugin indent on
 hi! VertSplit ctermfg=233  ctermbg=233
 hi! ColorColumn ctermfg=darkred ctermbg=black
