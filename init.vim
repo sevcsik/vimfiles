@@ -53,6 +53,11 @@ call neobundle#end()
 "JS abbreviations
 ab jsvoid javascript:void(0)
 
+"Angular2
+ab ng2comp import { Component } from '@angular/core';<CR><CR>@Component({<CR>selector: ''<CR>})<CR>export class Component() {<CR>}
+ab ng2dir import { Directive } from '@angular/core';<CR><CR>@Directive({<CR>selector: ''<CR>})<CR>export class Directive() {<CR>}
+ab ng2mod import { NgModule } from '@angular/core';<CR><CR>@NgModule({<CR>imports: [],<CR>declarations:{},<CR>exports: []<CR>})<CR>export class Module {<CR>}
+
 "CSS abbreviations
 ab lt480 @media only screen and (max-width: 479px) {<CR>
 ab lt768 @media only screen and (max-width: 767px) {<CR>
@@ -79,12 +84,15 @@ set smarttab
 
 command Todo grep TODO -A1 -r . 
 
+"Keyboard shortcuts
+tnoremap <Esc> <C-\><C-n>
+
 "Look'n'feel
 colorscheme candy
 let &t_Co=256
 set background=dark
 set hlsearch
-set colorcolumn=80
+set colorcolumn=150
 set mouse=a
 set backspace=indent,eol,start
 syntax enable
