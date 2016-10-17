@@ -21,6 +21,7 @@ NeoBundle "Xuyuanp/nerdtree-git-plugin"
 NeoBundle "vim-airline/vim-airline"
 
 let g:airline_powerline_fonts = 1
+NeoBundle "keepcase.vim"
 let g:deoplete#enable_at_startup = 1
 
 NeoBundle 'Shougo/vimproc.vim', {
