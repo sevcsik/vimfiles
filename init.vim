@@ -1,4 +1,4 @@
-let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
+	let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
 
 "NeoBundle init
 set runtimepath+=~/.config/nvim/bundle/neobundle.vim
@@ -22,6 +22,7 @@ NeoBundle "vim-airline/vim-airline"
 
 let g:airline_powerline_fonts = 1
 NeoBundle "keepcase.vim"
+NeoBundle "wincent/terminus"
 let g:deoplete#enable_at_startup = 1
 
 NeoBundle 'Shougo/vimproc.vim', {

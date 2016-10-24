@@ -1,2 +1,3 @@
-setlocal fo+=aw
-setlocal tw=0
+echo "mail.vim hello"
+set formatoptions=
+set textwidth=0
