@@ -16,6 +16,9 @@ NeoBundle "tomlion/vim-solidity"
 NeoBundle "candy.vim"
 NeoBundle "editorconfig/editorconfig-vim"
 NeoBundle "Shougo/deoplete.nvim"
+NeoBundle "scrooloose/nerdtree"
+NeoBundle "Xuyuanp/nerdtree-git-plugin"
+
 let g:deoplete#enable_at_startup = 1
 
 NeoBundle 'Shougo/vimproc.vim', {
@@ -98,9 +101,10 @@ set backspace=indent,eol,start
 syntax enable
 set termguicolors
 filetype plugin indent on
-hi! VertSplit ctermfg=233  ctermbg=233
-hi! ColorColumn ctermfg=darkred ctermbg=black
-hi! Search ctermfg=yellow ctermbg=235
+hi! VertSplit guifg=#cccccc guibg=#cccccc
+hi! ColorColumn guifg=#ffffff guibg=#000000
+hi! Search guifg=#ffffff guibg=#808000
+hi! Normal guifg=#cccccc guibg=none
 set number
 
 set guioptions-=T
