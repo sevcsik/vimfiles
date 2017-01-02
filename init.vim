@@ -22,6 +22,7 @@ NeoBundle "vim-airline/vim-airline"
 
 let g:airline_powerline_fonts = 1
 NeoBundle "keepcase.vim"
+NeoBundle "tpope/vim-abolish"
 NeoBundle "wincent/terminus"
 let g:deoplete#enable_at_startup = 1
 
