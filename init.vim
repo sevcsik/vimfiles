@@ -19,6 +19,7 @@ NeoBundle "Shougo/deoplete.nvim"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "Xuyuanp/nerdtree-git-plugin"
 NeoBundle "vim-airline/vim-airline"
+NeoBundle "DrawIt"
 
 let g:airline_powerline_fonts = 1
 NeoBundle "keepcase.vim"
