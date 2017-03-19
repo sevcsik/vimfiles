@@ -40,6 +40,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 "Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:syntastic_solidity_checkers = ['solium']
 let g:syntastic_typescript_tsc_fname = ''
 
 "CSS
@@ -56,6 +57,9 @@ NeoBundle "vim-scripts/Smart-Tabs"
 NeoBundle "mhartington/deoplete-typescript"
 NeoBundle "Quramy/tsuquyomi"
 NeoBundle "leafgarland/typescript-vim"
+
+"Ethereum
+NeoBundle "tomlion/solidity"
 
 call neobundle#end()
 
