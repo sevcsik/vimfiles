@@ -51,16 +51,6 @@ NeoBundle "hail2u/vim-css3-syntax"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "mxw/vim-jsx"
 NeoBundle "vim-scripts/Smart-Tabs"
-set conceallevel=1
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇐"
-let g:javascript_conceal_undefined            = "⊥"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
 
 "Typescript
 NeoBundle "mhartington/deoplete-typescript"
@@ -72,30 +62,11 @@ NeoBundle "tomlion/solidity"
 
 call neobundle#end()
 
-"JS abbreviations
-ab jsvoid javascript:void(0)
-
-"CSS abbreviations
-ab lt480 @media only screen and (max-width: 479px) {<CR>
-ab lt768 @media only screen and (max-width: 767px) {<CR>
-ab lt1024 @media only screen and (max-width: 1023px) {<CR>
-ab lt1280 @media only screen and (max-width: 1279px) {<CR>
-
-ab gte480 @media only screen and (min-width: 480px) {<CR>
-ab gte768 @media only screen and (min-width: 768px) {<CR>
-ab gte1024 @media only screen and (min-width: 1024px) {<CR>
-ab gte1280 @media only screen and (min-width: 1280px) {<CR>
-
 "close brackets
 inoremap [ []<C-o>i
 inoremap { {}<C-o>i
 inoremap ( {}<C-o>i
 
-
-"vim-javascript
-let b:javascript_fold = 1
-let g:javascript_conceal = 1
-let g:javascript_enable_domhtmlcss = 1
 
 "Code style
 set shiftwidth=4
