@@ -50,8 +50,17 @@ NeoBundle "hail2u/vim-css3-syntax"
 "JS
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "mxw/vim-jsx"
-NeoBundle "jason0x43/vim-js-indent"
 NeoBundle "vim-scripts/Smart-Tabs"
+set conceallevel=1
+let g:javascript_conceal_function             = "ƒ"
+let g:javascript_conceal_null                 = "ø"
+let g:javascript_conceal_this                 = "@"
+let g:javascript_conceal_return               = "⇐"
+let g:javascript_conceal_undefined            = "⊥"
+let g:javascript_conceal_prototype            = "¶"
+let g:javascript_conceal_static               = "•"
+let g:javascript_conceal_super                = "Ω"
+let g:javascript_conceal_arrow_function       = "⇒"
 
 "Typescript
 NeoBundle "mhartington/deoplete-typescript"
@@ -76,6 +85,12 @@ ab gte480 @media only screen and (min-width: 480px) {<CR>
 ab gte768 @media only screen and (min-width: 768px) {<CR>
 ab gte1024 @media only screen and (min-width: 1024px) {<CR>
 ab gte1280 @media only screen and (min-width: 1280px) {<CR>
+
+"close brackets
+inoremap [ []<C-o>i
+inoremap { {}<C-o>i
+inoremap ( {}<C-o>i
+
 
 "vim-javascript
 let b:javascript_fold = 1
@@ -110,6 +125,7 @@ hi! VertSplit guifg=#cccccc guibg=#cccccc
 hi! ColorColumn guifg=#ffffff guibg=#000000
 hi! Search guifg=#ffffff guibg=#808000
 hi! Normal guifg=#cccccc guibg=none
+hi! Conceal guifg=#cc00cc guibg=none
 set number
 
 set guioptions-=T
