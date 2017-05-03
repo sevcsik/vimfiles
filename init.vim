@@ -49,8 +49,6 @@ NeoBundle "hail2u/vim-css3-syntax"
 
 "JS
 NeoBundle "pangloss/vim-javascript"
-NeoBundle "mxw/vim-jsx"
-NeoBundle "vim-scripts/Smart-Tabs"
 
 "Typescript
 NeoBundle "mhartington/deoplete-typescript"
@@ -65,7 +63,7 @@ call neobundle#end()
 "close brackets
 inoremap [ []<C-o>i
 inoremap { {}<C-o>i
-inoremap ( {}<C-o>i
+inoremap ( ()<C-o>i
 
 
 "Code style
@@ -83,6 +81,7 @@ tnoremap <Esc> <C-\><C-n>
 
 "Look'n'feel
 colorscheme candy
+set conceallevel=1
 let &t_Co=256
 set background=dark
 set hlsearch
