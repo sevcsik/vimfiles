@@ -20,6 +20,11 @@ NeoBundle "scrooloose/nerdtree"
 NeoBundle "Xuyuanp/nerdtree-git-plugin"
 NeoBundle "vim-airline/vim-airline"
 NeoBundle "DrawIt"
+NeoBundle "mattn/emmet-vim"
+NeoBundle "Scuilion/gradle-syntastic-plugin"
+NeoBundle "hsanson/vim-android"
+NeoBundle "idanarye/vim-vebugger"
+NeoBundle "artur-shaik/vim-javacomplete2"
 
 let g:airline_powerline_fonts = 1
 NeoBundle "keepcase.vim"
@@ -42,6 +47,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
 let g:syntastic_solidity_checkers = ['solium']
 let g:syntastic_typescript_tsc_fname = ''
+let g:syntastic_java_checkers=['javac']
+let g:syntastic_java_javac_config_file_enabled = 1
 
 "CSS
 NeoBundle "groenewege/vim-less"
