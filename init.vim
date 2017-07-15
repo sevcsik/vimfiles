@@ -13,7 +13,6 @@ NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
 NeoBundle "wakatime/vim-wakatime"
 NeoBundle "tomlion/vim-solidity"
-NeoBundle "candy.vim"
 NeoBundle "editorconfig/editorconfig-vim"
 NeoBundle "Shougo/deoplete.nvim"
 NeoBundle "scrooloose/nerdtree"
@@ -25,6 +24,7 @@ NeoBundle "Scuilion/gradle-syntastic-plugin"
 NeoBundle "hsanson/vim-android"
 NeoBundle "idanarye/vim-vebugger"
 NeoBundle "artur-shaik/vim-javacomplete2"
+NeoBundle "morhetz/gruvbox"
 
 let g:airline_powerline_fonts = 1
 NeoBundle "keepcase.vim"
@@ -47,7 +47,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
 let g:syntastic_solidity_checkers = ['solium']
 let g:syntastic_typescript_tsc_fname = ''
-let g:syntastic_java_checkers=['javac']
+let g:syntastic_java_checkers=[]
 let g:syntastic_java_javac_config_file_enabled = 1
 
 "CSS
@@ -99,22 +99,20 @@ command Todo grep TODO -A1 -r .
 tnoremap <Esc> <C-\><C-n>
 
 "Look'n'feel
-colorscheme candy
+filetype plugin indent on
+syntax enable
+set background=dark
+let g:gruvbox_contrast_dark="hard"
+colorscheme gruvbox
+hi! Normal ctermfg=223 ctermbg=none guifg=#ebdbb2 guibg=none
+let g:airline_theme="gruvbox"
 set conceallevel=1
 let &t_Co=256
-set background=dark
+set t_ut=
 set hlsearch
-set colorcolumn=150
+set colorcolumn=120
 set mouse=a
 set backspace=indent,eol,start
-syntax enable
-set termguicolors
-filetype plugin indent on
-hi! VertSplit guifg=#cccccc guibg=#cccccc
-hi! ColorColumn guifg=#ffffff guibg=#000000
-hi! Search guifg=#ffffff guibg=#808000
-hi! Normal guifg=#cccccc guibg=none
-hi! Conceal guifg=#cc00cc guibg=none
 set number
 
 set guioptions-=T

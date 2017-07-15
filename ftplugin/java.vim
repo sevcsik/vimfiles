@@ -1,6 +1,9 @@
 setlocal omnifunc=javacomplete#Complete
 let g:deoplete#omni#input_patterns = {}
-let g:deoplete#omni#input_patterns.java = '[^. *\t]\.\w*'
+let g:deoplete#omni#input_patterns.java='[^. *\t]\.\w*'
+"let g:syntastic_java_checkers=['javac']
+"let g:syntastic_java_javac_config_file_enabled=1
+
 
 nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
 imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
