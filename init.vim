@@ -80,9 +80,9 @@ NeoBundle "tomlion/solidity"
 call neobundle#end()
 
 "close brackets
-inoremap [ []<C-o>i
-inoremap { {}<C-o>i
-inoremap ( ()<C-o>i
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap ( ()<Left>
 
 
 "Code style
