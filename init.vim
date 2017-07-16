@@ -88,6 +88,8 @@ tnoremap <Esc> <C-\><C-n>
 "Look'n'feel
 filetype plugin indent on
 syntax enable
+set list
+set listchars=tab:»\ ,trail:.
 set background=dark
 let g:gruvbox_contrast_dark="hard"
 colorscheme gruvbox
