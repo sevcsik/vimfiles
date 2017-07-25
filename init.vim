@@ -9,27 +9,24 @@ call neobundle#begin(expand('~/.config/nvim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle "tpope/vim-surround"
 NeoBundle "scrooloose/syntastic"
 NeoBundle "wakatime/vim-wakatime"
-NeoBundle "tomlion/vim-solidity"
 NeoBundle "editorconfig/editorconfig-vim"
-NeoBundle "Shougo/deoplete.nvim"
 NeoBundle "scrooloose/nerdtree"
 NeoBundle "Xuyuanp/nerdtree-git-plugin"
 NeoBundle "vim-airline/vim-airline"
 NeoBundle "DrawIt"
 NeoBundle "mattn/emmet-vim"
-NeoBundle "Scuilion/gradle-syntastic-plugin"
 NeoBundle "hsanson/vim-android"
 NeoBundle "idanarye/vim-vebugger"
 NeoBundle "artur-shaik/vim-javacomplete2"
 NeoBundle "morhetz/gruvbox"
-
-let g:airline_powerline_fonts = 1
-NeoBundle "keepcase.vim"
+NeoBundle "mhinz/vim-startify"
+NeoBundle "vim-gitgutter"
 NeoBundle "tpope/vim-abolish"
 NeoBundle "wincent/terminus"
+
+let g:airline_powerline_fonts = 1
 let g:deoplete#enable_at_startup = 1
 
 NeoBundle 'Shougo/vimproc.vim', {
