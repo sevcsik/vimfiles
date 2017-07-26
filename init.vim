@@ -1,43 +1,41 @@
-	let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
+let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
 
-"NeoBundle init
-set runtimepath+=~/.config/nvim/bundle/neobundle.vim
+if &compatible
+	set nocompatible
+endif
+set runtimepath+=~/.config/nvim/dein.vim
 
-call neobundle#begin(expand('~/.config/nvim/bundle/'))
-
-"Common bundles
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle "scrooloose/syntastic"
-NeoBundle "wakatime/vim-wakatime"
-NeoBundle "editorconfig/editorconfig-vim"
-NeoBundle "scrooloose/nerdtree"
-NeoBundle "Xuyuanp/nerdtree-git-plugin"
-NeoBundle "vim-airline/vim-airline"
-NeoBundle "DrawIt"
-NeoBundle "mattn/emmet-vim"
-NeoBundle "hsanson/vim-android"
-NeoBundle "idanarye/vim-vebugger"
-NeoBundle "artur-shaik/vim-javacomplete2"
-NeoBundle "morhetz/gruvbox"
-NeoBundle "mhinz/vim-startify"
-NeoBundle "vim-gitgutter"
-NeoBundle "tpope/vim-abolish"
-NeoBundle "wincent/terminus"
+if dein#load_state("~/.config/nvim/dein_packages")
+	call dein#begin("~/.config/nvim/dein_packages")
+	call dein#add("~/.config/nvim/dein.vim")
+	call dein#add("tpope/vim-fugitive")
+	call dein#add("flazz/vim-colorschemes")
+	call dein#add("scrooloose/syntastic")
+	call dein#add("wakatime/vim-wakatime")
+	call dein#add("editorconfig/editorconfig-vim")
+	call dein#add("vim-airline/vim-airline")
+	call dein#add("vim-scripts/DrawIt")
+	call dein#add("mattn/emmet-vim")
+	call dein#add("hsanson/vim-android")
+	call dein#add("idanarye/vim-vebugger")
+	call dein#add("artur-shaik/vim-javacomplete2")
+	call dein#add("morhetz/gruvbox")
+	call dein#add("mhinz/vim-startify")
+	call dein#add("vim-scripts/vim-gitgutter")
+	call dein#add("tpope/vim-abolish")
+	call dein#add("wincent/terminus")
+	call dein#add("groenewege/vim-less")
+	call dein#add("hail2u/vim-css3-syntax")
+	call dein#add("pangloss/vim-javascript")
+	call dein#add("mhartington/deoplete-typescript")
+	call dein#add("Quramy/tsuquyomi")
+	call dein#add("leafgarland/typescript-vim")
+	call dein#end()
+	call dein#save_state()
+endif
 
 let g:airline_powerline_fonts = 1
 let g:deoplete#enable_at_startup = 1
-
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
 
 "Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
@@ -46,22 +44,6 @@ let g:syntastic_solidity_checkers = ['solium']
 let g:syntastic_typescript_tsc_fname = ''
 let g:syntastic_java_checkers=[]
 let g:syntastic_java_javac_config_file_enabled = 1
-
-"CSS
-NeoBundle "groenewege/vim-less"
-NeoBundle "hail2u/vim-css3-syntax"
-
-"JS
-NeoBundle "pangloss/vim-javascript"
-
-"Typescript
-NeoBundle "mhartington/deoplete-typescript"
-NeoBundle "Quramy/tsuquyomi"
-NeoBundle "leafgarland/typescript-vim"
-
-"Ethereum
-NeoBundle "tomlion/solidity"
-call neobundle#end()
 
 "close brackets
 inoremap [ []<Left>
