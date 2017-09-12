@@ -30,10 +30,11 @@ if dein#load_state("~/.config/nvim/dein_packages")
 	call dein#add("mhartington/deoplete-typescript")
 	call dein#add("Quramy/tsuquyomi")
 	call dein#add("leafgarland/typescript-vim")
-	call dein#add("vim-scripts/Ranger.vim")
 	call dein#add("davidhalter/jedi-vim")
 	call dein#add("zchee/deoplete-jedi")
 	call dein#add("Shougo/deoplete.nvim")
+	call dein#add("rafaqz/ranger.vim")
+	call dein#add("JalaiAmitahl/maven-compiler.vim")
 	call dein#end()
 	call dein#save_state()
 endif
@@ -67,6 +68,17 @@ command Todo grep TODO -A1 -r .
 
 "Keyboard shortcuts
 tnoremap <Esc> <C-\><C-n>
+map <leader>rr :RangerEdit<cr>
+map <leader>rv :RangerVSplit<cr>
+map <leader>rs :RangerSplit<cr>
+map <leader>rt :RangerTab<cr>
+map <leader>ri :RangerInsert<cr>
+map <leader>ra :RangerAppend<cr>
+map <leader>rc :set operatorfunc=RangerChangeOperator<cr>g@
+map <leader>rR :set operatorfunc=RangerBrowseEdit<cr>g@
+map <leader>rT :set operatorfunc=RangerBrowseTab<cr>g@
+map <leader>rS :set operatorfunc=RangerBrowseSplit<cr>g@
+map <leader>rV :set operatorfunc=RangerBrowseVSplit<cr>g@
 
 "Look'n'feel
 filetype plugin indent on
@@ -88,5 +100,3 @@ set number
 
 set guioptions-=T
 set guioptions-=m
-
-set exrc
