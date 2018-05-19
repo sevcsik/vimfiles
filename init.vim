@@ -35,6 +35,7 @@ if dein#load_state("~/.config/nvim/dein_packages")
 	call dein#add("Shougo/deoplete.nvim")
 	call dein#add("rafaqz/ranger.vim")
 	call dein#add("JalaiAmitahl/maven-compiler.vim")
+	call dein#add("mfukar/robotframework-vim")
 	call dein#end()
 	call dein#save_state()
 endif
@@ -100,3 +101,7 @@ set number
 
 set guioptions-=T
 set guioptions-=m
+
+"Load local config files
+silent! so .vimrc
+silent! so ../.vimrc
