@@ -3,11 +3,10 @@ let $PYTHONPATH='/usr/lib/python3.5/site-packages/'
 if &compatible
 	set nocompatible
 endif
-set runtimepath+=~/.config/nvim/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state("~/.config/nvim/dein_packages")
-	call dein#begin("~/.config/nvim/dein_packages")
-	call dein#add("~/.config/nvim/dein.vim")
+if dein#load_state("~/.cache/dein")
+	call dein#begin("~/.cache/dein")
 	call dein#add("tpope/vim-fugitive")
 	call dein#add("flazz/vim-colorschemes")
 	call dein#add("scrooloose/syntastic")
@@ -40,8 +39,12 @@ if dein#load_state("~/.config/nvim/dein_packages")
 	call dein#save_state()
 endif
 
+if dein#check_install()
+	call dein#install()
+endif
+
 let g:airline_powerline_fonts = 1
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 "Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
