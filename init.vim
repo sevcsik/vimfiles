@@ -26,12 +26,13 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("groenewege/vim-less")
 	call dein#add("hail2u/vim-css3-syntax")
 	call dein#add("pangloss/vim-javascript")
-	call dein#add("mhartington/deoplete-typescript")
 	call dein#add("Quramy/tsuquyomi")
 	call dein#add("leafgarland/typescript-vim")
 	call dein#add("davidhalter/jedi-vim")
 	call dein#add("zchee/deoplete-jedi")
+	call dein#add("Shougo/vimproc.vim", { 'build': 'make' })
 	call dein#add("Shougo/deoplete.nvim")
+	call dein#add("rudism/deoplete-tsuquyomi")
 	call dein#add("rafaqz/ranger.vim")
 	call dein#add("JalaiAmitahl/maven-compiler.vim")
 	call dein#add("mfukar/robotframework-vim")
@@ -44,7 +45,7 @@ if dein#check_install()
 endif
 
 let g:airline_powerline_fonts = 1
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 
 "Syntastic config
 let g:syntastic_javascript_checkers = ['eslint']
