@@ -109,3 +109,10 @@ set guioptions-=m
 "Load local config files
 silent! so .vimrc
 silent! so ../.vimrc
+
+"Switch to presentation mode
+
+function Presentation()
+	set background=light
+	hi! Normal ctermbg=none guibg=none
+endfunction
