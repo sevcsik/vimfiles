@@ -18,9 +18,9 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("hsanson/vim-android")
 	call dein#add("idanarye/vim-vebugger")
 	call dein#add("artur-shaik/vim-javacomplete2")
-	call dein#add("morhetz/gruvbox")
-	call dein#add("mhinz/vim-startify")
-	call dein#add("vim-scripts/vim-gitgutter")
+	call dein#add("TroyFletcher/vim-colors-synthwave")
+	call dein#add("vim-airline/vim-airline-themes")
+	call dein#add("airblade/vim-gitgutter")
 	call dein#add("tpope/vim-abolish")
 	call dein#add("wincent/terminus")
 	call dein#add("groenewege/vim-less")
@@ -33,9 +33,11 @@ if dein#load_state("~/.cache/dein")
 	call dein#add("Shougo/vimproc.vim", { 'build': 'make' })
 	call dein#add("Shougo/deoplete.nvim")
 	call dein#add("rudism/deoplete-tsuquyomi")
-	call dein#add("rafaqz/ranger.vim")
+	call dein#add("francoiscabrol/ranger.vim")
+	call dein#add("rbgrouleff/bclose.vim")
 	call dein#add("JalaiAmitahl/maven-compiler.vim")
 	call dein#add("mfukar/robotframework-vim")
+	call dein#add("derekwyatt/vim-scala")
 	call dein#end()
 	call dein#save_state()
 endif
@@ -55,11 +57,7 @@ let g:syntastic_typescript_tsc_fname = ''
 let g:syntastic_java_checkers=[]
 let g:syntastic_java_javac_config_file_enabled = 1
 
-"close brackets
-inoremap [ []<Left>
-inoremap { {}<Left>
-inoremap ( ()<Left>
-
+"autocmd BufWritePost *.scala silent :EnTypeCheck
 
 "Code style
 set shiftwidth=4
@@ -91,10 +89,9 @@ syntax enable
 set list
 set listchars=tab:»\ ,trail:.
 set background=dark
-let g:gruvbox_contrast_dark="hard"
-colorscheme gruvbox
+colorscheme synthwave
 hi! Normal ctermfg=223 ctermbg=none guifg=#ebdbb2 guibg=none
-let g:airline_theme="gruvbox"
+let g:airline_theme="lucius"
 let &t_Co=256
 set t_ut=
 set hlsearch
